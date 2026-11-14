@@ -1,0 +1,12 @@
+# User credential database for env4 (Personal Linux Home / Media Server)
+# Format: username:x:password
+# '!' denies a password, '*' allows any password
+
+root:x:!root
+root:x:!123456
+root:x:homelab2024
+alex:x:alex123
+alex:x:plex2024
+alex:x:password123
+media:x:media
+media:x:plex

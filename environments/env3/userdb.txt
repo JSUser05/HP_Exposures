@@ -1,0 +1,11 @@
+# User credential database for env3 (Cloud Deployment Node)
+# Format: username:x:password
+# '!' denies a password, '*' allows any password
+
+root:x:!root
+root:x:!123456
+root:x:CloudAdmin#99
+ubuntu:x:ubuntu
+ubuntu:x:deploy2024
+ubuntu:x:aws12345
+deploy:x:deploy

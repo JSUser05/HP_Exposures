@@ -1,0 +1,13 @@
+# User credential database for env1 (Staging Web API Server)
+# Format: username:x:password
+# '!' denies a password, '*' allows any password
+
+root:x:!root
+root:x:!123456
+root:x:!password
+root:x:StagingRoot!2024
+dev-user:x:devpass123
+dev-user:x:welcome123
+dev-user:x:staging2024
+www-data:x:www-data
+admin:x:admin123

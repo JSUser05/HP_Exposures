@@ -1,0 +1,11 @@
+# Home Router Configuration Backup (192.168.1.1)
+hostname=home-router-gw
+lan_ip=192.168.1.1
+lan_netmask=255.255.255.0
+dhcp_start=192.168.1.100
+dhcp_end=192.168.1.250
+wifi_ssid=Alex_Home_5G
+wifi_psk=SunnyDay99!
+admin_user=admin
+admin_pass_hash=$1$rtr$9x8a7b6c5d4e3f2a1b0c/
+port_forward_ssh=2222->192.168.1.50:22

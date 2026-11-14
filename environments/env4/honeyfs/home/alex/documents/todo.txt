@@ -1,0 +1,5 @@
+Home Server To-Do List:
+- Set up automated nightly backup to /home/alex/backups
+- Update Plex container image in /home/alex/homelab/docker-compose.yml
+- Renew SSL certificate for home-server.local
+- Change router admin password (saved old backup in backups/router_config.bak)

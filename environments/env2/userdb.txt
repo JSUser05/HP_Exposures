@@ -1,0 +1,12 @@
+# User credential database for env2 (Student Lab / Dev Desktop)
+# Format: username:x:password
+# '!' denies a password, '*' allows any password
+
+root:x:!root
+root:x:labadmin2024
+root:x:toor
+student:x:student
+student:x:cs2743
+student:x:password123
+labuser:x:labuser
+phil:x:phil123

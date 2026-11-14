@@ -1,0 +1,44 @@
+ENV_LIBRARY.PY - QUICK MANUAL
+=============================
+
+1. ENVIRONMENTS AVAILABLE
+-------------------------
+- env1 : Staging Web API Server    (custom_fs1.pickle | host: staging-api)
+- env2 : Student Lab / Dev Desktop (custom_fs2.pickle | host: student-lab)
+- env3 : Cloud Deployment Node     (custom_fs3.pickle | host: ip-172-31-18-42)
+- env4 : Home / Media Server       (custom_fs4.pickle | host: home-server)
+
+
+2. MAIN COMMANDS
+----------------
+  python3 env_library.py list           # List all environments and see which is active
+  python3 env_library.py status         # Show details of the currently active environment
+  python3 env_library.py show <env>     # View an environment's cowrie.cfg and userdb.txt
+  python3 env_library.py apply <env>    # Activate <env> (writes cowrie/etc/cowrie.cfg & userdb.txt)
+
+
+3. OPTIONAL FLAGS FOR `apply`
+-----------------------------
+  --hostname <NAME>             # Change the honeypot hostname
+  --port <PORT>                 # Change the SSH listen port (default: 2222)
+  --add-user "<USER>:<PASS>"    # Add an extra login credential to userdb.txt
+  --set <SECTION>.<KEY>=<VAL>   # Override any setting in cowrie.cfg
+
+
+4. EXAMPLES
+-----------
+# Example 1: Switch to env1 with its default settings
+python3 env_library.py apply env1
+
+# Example 2: Switch to env2 and change the SSH port and hostname for this VM
+python3 env_library.py apply env2 --port 2222 --hostname cs-lab-vm2
+
+# Example 3: Switch to env3 and add two extra user logins
+python3 env_library.py apply env3 --add-user "admin:admin123" --add-user "guest:guest"
+
+# Example 4: Switch to env4 and override a specific cowrie.cfg setting
+python3 env_library.py apply env4 --set honeypot.idle_timeout=300 --set telnet.enabled=true
+
+# Example 5: Check what is currently active, then restart Cowrie to apply changes
+python3 env_library.py status
+cd cowrie && bin/cowrie restart
