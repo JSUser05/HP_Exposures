@@ -1,0 +1,11 @@
+{
+  "active_environment": "env4",
+  "description": "Personal Linux Home / Media Server (Ubuntu 22.04, alex/media users, homelab & personal files in custom_fs4.pickle)",
+  "hostname": "home-server",
+  "filesystem_pickle": "/Users/joshuasosa/Desktop/UTSA/IndpWork/HP_Exposures/cowrie/var/lib/cowrie/custom_fs4.pickle",
+  "contents_path": "/Users/joshuasosa/Desktop/UTSA/IndpWork/HP_Exposures/environments/env4/honeyfs",
+  "ssh_version": "SSH-2.0-OpenSSH_8.9p1 Ubuntu-3ubuntu0.6",
+  "listen_endpoints": "tcp:2222:interface=0.0.0.0",
+  "active_cfg": "/Users/joshuasosa/Desktop/UTSA/IndpWork/HP_Exposures/cowrie/etc/cowrie.cfg",
+  "active_userdb": "/Users/joshuasosa/Desktop/UTSA/IndpWork/HP_Exposures/cowrie/etc/userdb.txt"
+}
